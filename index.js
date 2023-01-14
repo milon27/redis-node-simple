@@ -1,8 +1,8 @@
 const { createClient } = require('redis')
 
+//redis default username is default: default
 const client = createClient({
     url: 'redis://default:@localhost:6379'
-    // url: 'redis://default:@indozone-dev.xdkams.ng.0001.apse1.cache.amazonaws.com:6379'
 });
 
 client.on("connect", () => console.log("connected"))
